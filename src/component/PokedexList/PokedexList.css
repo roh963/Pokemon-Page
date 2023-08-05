@@ -1,3 +1,17 @@
-.pokedlist-wrap{
+.pokemon-list-wrap{
+  
     margin: 2rem auto;
+}
+.pokemon-wrap{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    
+    
+}
+.pokemon-name{
+   
+    letter-spacing: 5px;
 }

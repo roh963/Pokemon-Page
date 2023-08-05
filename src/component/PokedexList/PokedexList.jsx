@@ -42,13 +42,18 @@ function PokedexList() {
     useEffect (()=>{
         downloadpokemon();
     },[]);
-    return(<>
-     <div>
-        pokemon
-        {
+    return(
+     <div className="pokemon-list-wrap" >
+           
+           <h1 className="pokemon-name">Pokemon List</h1>  
+           <div className="pokemon-wrap">
+           
+           {
             (isloading)?"loading" :pokemonList.map((p)=><Pokemon name={p.name}  image={p.image} key={p.id} />)
         }
+           </div>
+
      </div>
-    </>);
+    );
 }
 export default PokedexList;
