@@ -36,7 +36,8 @@ function PokedexList() {
          return { id:pokemon.id,
              name: pokemon.name , 
             image:pokemon.sprites.other.dream_world.front_default,
-          types:pokemon.types}
+          types:pokemon.types,
+           }
 
             
         }));
@@ -55,7 +56,7 @@ function PokedexList() {
            <div className="pokemon-wrap">
            
            {
-            (isloading)?"loading" :pokemonList.map((p)=><Pokemon name={p.name}  image={p.image} key={p.id} />)
+            (isloading)?"loading" :pokemonList.map((p)=><Pokemon name={p.name}  image={p.image} key={p.id} id={p.id} />)
         }
            </div>
            <div className="control">
