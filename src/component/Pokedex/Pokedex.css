@@ -4,6 +4,18 @@ flex-direction: column;
 
 }
 #pokedex-heading{
-margin: auto;
+
+    position: absolute;
+    display: inline-block; 
+ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4wERAHneqkVCVBhGaRCLet35dl5LDNMOu2Ewcu2-wO0pujWhUN2knH5RFMJ0K_Xl6XFQ&usqp=CAU");
+margin: auto;  
 letter-spacing: 5px;
+
+top: 2%; /* Adjust as needed */
+left: 50%; /* Adjust as needed */
+transform: translate(-50%, -50%);
+font-size: 24px; /* Set your desired font size */
+font-family: Arial, sans-serif; /* Set your desired font */
+ /* Set the text color */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
 }
